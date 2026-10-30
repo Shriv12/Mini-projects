@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60e39a;
+}
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+}
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 600;
+  align-items: center;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  border: 2px solid #ccc;
+  background-color: #fbefef;
+  color: #000;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+.cell:hover {
+  background-color: #ccc;
+}
+.reset-btn {
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: 600;
+  background: black;
+  color: white;
+  font-size: 16px;
+}

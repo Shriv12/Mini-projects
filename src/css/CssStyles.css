@@ -1,0 +1,70 @@
+.css-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    gap: 40px;
+    h3{
+        color: white;
+        margin-bottom: 16px;
+    }
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+
+    /* transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0; */
+
+    transition: all 1s ease-in-out 0ms
+}
+.box:hover{
+    width: 200px;
+}
+
+.box-container{
+        width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: Orbit 3s linear 1;
+    .box{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        /* animation: moveBox 3s linear infinite; */
+        &:hover{
+            /* animation: Orbit 5s ease-in-out infinite; */
+        }
+
+    }
+}
+
+@keyframes moveBox {
+    0%, 100%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(140px, 0);
+    }
+    50%{
+        transform: translate(140px, 140px);
+    }
+    75%{
+     transform: translate(0, 140px);
+    }
+    
+}
+
+@keyframes Orbit{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}

@@ -1,0 +1,23 @@
+.text-wrapper{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid green;
+    padding: 16px 8px;
+    margin: 0 auto;
+    background-color: white;
+}
+p{
+    color: black
+}
+.clamp-3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.read-more{
+    color: blue;
+}

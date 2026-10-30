@@ -1,0 +1,46 @@
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #b6b4d8;
+}
+
+.otp-form {
+  width: 265px;
+  display: flex;
+  gap: 8px;
+}
+.otp-form input {
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.otp-form button {
+  padding: 8px;
+  border-radius: 4px;
+  background: green;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+.otp-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.otp-wrapper{
+  margin-bottom: 20px;
+}
+
+.otp-input-wrapper{
+  display: flex;
+  gap: 20px;
+}
+.ph-number{
+  font-weight: 600;
+}
